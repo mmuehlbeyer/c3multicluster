@@ -15,18 +15,39 @@ mkdir /tmp/c3multi/
 
 ## Start Zookeeper
 
-Start the needed zookeeper servers with
-
 ```bash
 start-zk.sh
 ```
 
-## start the brokers
+## start Kafka brokers
 
 ```bash
 start-kafka.sh
 ```
 
-## finally start control center
+## start control center
 
+```bash
+start-c3.sh
+```
+
+Controlcenter should now be available at http://localhost:9021/clusters
+
+
+## stop everything
+
+to stop the demo shutdown everything (c3, broker, zookeeper) with
+
+```bash
+stop-all.sh
+```
+
+## cleanup 
+
+if needed you cleanup the whole directories to start from scratch.
+could be achieved by running
+
+```bash
+cleanup.sh
+```
 
